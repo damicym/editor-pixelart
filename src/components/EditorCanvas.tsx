@@ -229,7 +229,7 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
                             <use href="/assets/sprite.svg#download"></use>
                         </svg>
                     </button>
-                    <button className='cursor-pointer transition-all hover:brightness-150 flex' onClick={() => setShowModal(true)}>
+                    <button className='cursor-pointer transition-all hover:brightness-150 flex gap-1 items-center' onClick={() => setShowModal(true)}>
                         <svg width="27" height="27" className='text-dark!'>
                             <use href="/assets/sprite.svg#settings"></use>
                         </svg>
