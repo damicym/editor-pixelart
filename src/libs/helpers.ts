@@ -1,4 +1,4 @@
-import { type Pixel, type GridSize, type PixelGrid } from "./types"
+import { type GridSize, type PixelGrid } from "./types"
 import { GRID_PROPERTIES } from "./config"
 
 const grid_half_width = GRID_PROPERTIES.WIDTH / 2

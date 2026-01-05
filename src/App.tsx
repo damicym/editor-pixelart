@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { type Tool } from './libs/types'
 import { COLORS, TOOLS } from './libs/config'
 import EditorCanvas from './components/EditorCanvas'

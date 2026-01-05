@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { type Pixel, type CanvasProps, type GridSize, type Tool, type ApplyModalChangesProps, type PixelGrid } from '../libs/types'
-import { TOOLS, EDITOR_DEF_CONFIG } from '../libs/config'
+import { TOOLS } from '../libs/config'
 import { createGrid, drawGrid, cloneGrid, drawAllCells, fill } from '../libs/helpers'
 import ModalBootstrap from './Modal'
 import { useEditorConfig } from './CanvasConfigProvider'
