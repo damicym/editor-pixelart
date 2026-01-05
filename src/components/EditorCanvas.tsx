@@ -126,11 +126,14 @@ function EditorCanvas({ currentColor, selectedTool }: CanvasProps) {
         if(e.button === 1) return
         isPainting.current = true
 
-        if(selectedTool === TOOLS.BRUSH) {
+        if(selectedTool === TOOLS.ERASER) {
             paintMode.current = selectedTool
-        } else {
+        } else if(selectedTool === TOOLS.BRUSH){
             paintMode.current =
             e.button === 2 ? TOOLS.ERASER : TOOLS.BRUSH
+        } else if(selectedTool === TOOLS.BUCKET){
+            paintMode.current =
+            e.button === 2 ? TOOLS.ERASER : TOOLS.BUCKET
         }
         tempGridRef.current = cloneGrid(gridContent)
 
